@@ -7,9 +7,7 @@ const DISTINCT = (array) => {
 
   const res = [];
   array.forEach((item) => {
-    if (res.includes(item)) {
-      delete array[item];
-    } else {
+    if (!res.includes(item)) {
       res.push(item);
     }
   });
