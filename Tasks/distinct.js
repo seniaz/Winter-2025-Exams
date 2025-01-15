@@ -6,14 +6,14 @@
 const DISTINCT = (array) => {
 
   const res = [];
-  array.forEach((item) => {
+  for (const item of array) {
     if (!res.includes(item)) {
       res.push(item);
     }
-  });
+  }
 
   return res;
 
-}
+};
 
 module.exports = DISTINCT;
