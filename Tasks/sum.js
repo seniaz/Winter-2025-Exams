@@ -3,15 +3,15 @@
 
 'use strict'
 
-const sum (s) => {
+const sum (array) => {
   const sum = [0];
 
-  for (const i of s) {
-    const t = typeof i;
-    if (t === 'number') {
+  for (const element of array) {
+    const type = typeof element;
+    if (type === 'number') {
       if (sum.length > 0) {
-        const new_Sum = sum[sum.length - 1] + i;
-        sum.push(new_Sum);
+        const elementSum = sum[sum.length - 1] + element;
+        sum.push(elementSum);
       }
     }
   }
