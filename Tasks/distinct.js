@@ -3,18 +3,18 @@
 
 'use strict'
 
-const DISTINCT(data) => {
-  const A = new Set();
+const DISTINCT(array) => {
+  const arrSet = new Set();
   const w = 0;
-  data.forEach((a) => {
-    if (A.has(a)) {
-      delete data[w];
+  array.forEach((item) => {
+    if (arrSet.has(item)) {
+      delete array[item];
     } else {
-      A.add(a);
+      arrSet.add(item);
     }
     w++;
   });
-  return data.filter
+  return array.filter
   (x => typeof x === 'number');
 }
 
