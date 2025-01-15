@@ -1,5 +1,3 @@
-// Refactor following solution
-// Sum all numbers from an array
 
 'use strict'
 
