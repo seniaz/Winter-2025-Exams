@@ -3,18 +3,18 @@
 
 'use strict'
 
-const DISTINCT(array) => {
+const DISTINCT = (array) => {
 
-  const arrSet = new Set();
+  const res = [];
   array.forEach((item) => {
-    if (arrSet.has(item)) {
+    if (res.includes(item)) {
       delete array[item];
     } else {
-      arrSet.add(item);
+      res.push(item);
     }
   });
 
-  return array;
+  return res;
 
 }
 
